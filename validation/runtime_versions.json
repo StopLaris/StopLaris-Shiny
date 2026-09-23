@@ -1,0 +1,18 @@
+{
+  "verified_date": "2026-09-22",
+  "R": "4.3.3",
+  "shiny": "1.8.0",
+  "jsonlite": "1.8.8",
+  "ggplot2": "3.4.4",
+  "DT": "0.31",
+  "testthat": "3.2.1",
+  "bslib": "0.6.1",
+  "Playwright": "1.62.1",
+  "Chrome Headless Shell": "153.0.8010.52",
+  "operating_system": "Ubuntu 24.04",
+  "runtime_notes": [
+    "Ubuntu r-cran-shiny 1.8.0 contains strftime.min.js but requests strftime-min.js; a local runtime alias was installed for actual HTTP tests. No app-source workaround was introduced.",
+    "Browser and Shiny server were launched together in one process/network namespace.",
+    "Chrome Headless Shell came from the official Chrome for Testing stable manifest; archive MD5 verified: 2d32adf1c0bcaf66602c32faa645749a."
+  ]
+}

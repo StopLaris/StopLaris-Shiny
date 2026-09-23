@@ -1,0 +1,470 @@
+{
+  "url": "http://127.0.0.1:3838",
+  "outputDir": "validation",
+  "overviewSelector": "#main_tab a[data-value=\"overview\"]",
+  "explorerSelector": "#main_tab a[data-value=\"explorer\"]",
+  "steps": [
+    {
+      "type": "select",
+      "name": "Main cohort selection",
+      "selector": "#explorer_dataset",
+      "value": "GSE173278",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "842",
+      "assertExact": true
+    },
+    {
+      "type": "select",
+      "name": "Patient filter JK124",
+      "selector": "#explorer_patient",
+      "value": "JK124",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "96",
+      "assertExact": true
+    },
+    {
+      "type": "download",
+      "name": "Filtered CSV has 96 JK124 cells",
+      "selector": "#download_cells",
+      "expectedRows": 96,
+      "requiredColumns": [
+        "cell_id",
+        "patient_id",
+        "USP9X"
+      ]
+    },
+    {
+      "type": "download",
+      "name": "Feature plot PNG download",
+      "selector": "#download_feature_plot",
+      "format": "png"
+    },
+    {
+      "type": "select",
+      "name": "FibroScore1 selection",
+      "selector": "#explorer_feature",
+      "value": "FibroScore1"
+    },
+    {
+      "type": "click",
+      "name": "Reset filters",
+      "selector": "#reset_filters",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "842",
+      "assertExact": true
+    },
+    {
+      "type": "select",
+      "name": "myCAF_like cell type filter",
+      "selector": "#explorer_cell_type",
+      "value": "myCAF_like",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "188",
+      "assertExact": true
+    },
+    {
+      "type": "slider",
+      "name": "USP9X slider filter",
+      "selector": "#explorer_range",
+      "value": [
+        0,
+        1
+      ],
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "176",
+      "assertExact": true
+    },
+    {
+      "type": "click",
+      "name": "Reset after slider",
+      "selector": "#reset_filters",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "842",
+      "assertExact": true
+    },
+    {
+      "type": "select",
+      "name": "External cohort selection",
+      "selector": "#explorer_dataset",
+      "value": "GSE141946",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "1.404",
+      "assertExact": true
+    },
+    {
+      "type": "select",
+      "name": "Healthy reference selection",
+      "selector": "#explorer_dataset",
+      "value": "GSE97930",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "10.253",
+      "assertExact": true
+    },
+    {
+      "type": "select",
+      "name": "Return to development cohort",
+      "selector": "#explorer_dataset",
+      "value": "GSE173278",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "842",
+      "assertExact": true,
+      "assertImage": "#umap_plot img"
+    },
+    {
+      "type": "screenshot",
+      "name": "Explorer UMAP screenshot",
+      "filename": "desktop-explorer"
+    },
+    {
+      "type": "tab",
+      "name": "Model tab",
+      "selector": "#main_tab a[data-value=\"models\"]"
+    },
+    {
+      "type": "select",
+      "name": "Main expanded grid model",
+      "selector": "#model_stage",
+      "value": "expanded_grid",
+      "assertSelector": "#model_context",
+      "assertText": "Ana analiz"
+    },
+    {
+      "type": "tableAlignment",
+      "name": "Permutation table header-body alignment",
+      "selector": "#permutation_table"
+    },
+    {
+      "type": "screenshot",
+      "name": "Model screenshot",
+      "filename": "desktop-models"
+    },
+    {
+      "type": "select",
+      "name": "Calibrated secondary model",
+      "selector": "#model_stage",
+      "value": "calibrated",
+      "assertSelector": "#model_context",
+      "assertText": "İkincil analiz"
+    },
+    {
+      "type": "tab",
+      "name": "External transfer tab",
+      "selector": "#main_tab a[data-value=\"external\"]"
+    },
+    {
+      "type": "tab",
+      "name": "Methods tab",
+      "selector": "#main_tab a[data-value=\"methods\"]"
+    },
+    {
+      "type": "tab",
+      "name": "Upload tab",
+      "selector": "#main_tab a[data-value=\"upload\"]"
+    },
+    {
+      "type": "tab",
+      "name": "Patient assessment tab",
+      "selector": "#main_tab a[data-value=\"patient\"]"
+    },
+    {
+      "type": "select",
+      "name": "Patient JK124 expression index and support",
+      "selector": "#patient_profile_id",
+      "value": "JK124",
+      "assertions": [
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(1) .kpi-value",
+          "text": "3,3 / 10",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(3) .kpi-value",
+          "text": "96 / 4",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "96 hücre"
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "Klinik risk: hesaplanamıyor."
+        }
+      ],
+      "checkOverflow": true
+    },
+    {
+      "type": "download",
+      "name": "JK124 research profile CSV source fields",
+      "selector": "#patient_profile_download",
+      "expectedRows": 1,
+      "requiredColumns": [
+        "score_0_10",
+        "method_version",
+        "reference_n_patients",
+        "reference_n_cells",
+        "clinical_risk_available",
+        "clinical_risk_probability"
+      ],
+      "expectedFields": {
+        "patient_id": "JK124",
+        "dataset": "GSE173278",
+        "method_version": "USP9X_cohort_midrank_0_10_v1",
+        "data_version": "V5_STAGE2_2026-09-20",
+        "clinical_risk_available": "FALSE",
+        "clinical_risk_probability": "",
+        "reference_includes_selected_patient": "TRUE"
+      },
+      "numericFields": {
+        "score_0_10": 3.3333333333333335,
+        "n_cells": 96,
+        "reference_n_patients": 10,
+        "reference_n_cells": 842
+      },
+      "nonemptyFields": [
+        "formula",
+        "normalization",
+        "normalization_denominator",
+        "clinical_risk_reason",
+        "reference_cells_sha256"
+      ]
+    },
+    {
+      "type": "select",
+      "name": "Patient JK126 expression index and support",
+      "selector": "#patient_profile_id",
+      "value": "JK126",
+      "assertions": [
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(1) .kpi-value",
+          "text": "10,0 / 10",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(3) .kpi-value",
+          "text": "6 / 2",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "6 hücre"
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "Klinik risk: hesaplanamıyor."
+        }
+      ],
+      "checkOverflow": true
+    },
+    {
+      "type": "download",
+      "name": "JK126 research profile CSV source fields",
+      "selector": "#patient_profile_download",
+      "expectedRows": 1,
+      "requiredColumns": [
+        "score_0_10",
+        "method_version",
+        "reference_n_patients",
+        "reference_n_cells",
+        "clinical_risk_available",
+        "clinical_risk_probability"
+      ],
+      "expectedFields": {
+        "patient_id": "JK126",
+        "dataset": "GSE173278",
+        "method_version": "USP9X_cohort_midrank_0_10_v1",
+        "data_version": "V5_STAGE2_2026-09-20",
+        "clinical_risk_available": "FALSE",
+        "clinical_risk_probability": "",
+        "reference_includes_selected_patient": "TRUE"
+      },
+      "numericFields": {
+        "score_0_10": 10,
+        "n_cells": 6,
+        "reference_n_patients": 10,
+        "reference_n_cells": 842
+      },
+      "nonemptyFields": [
+        "formula",
+        "normalization",
+        "normalization_denominator",
+        "clinical_risk_reason",
+        "reference_cells_sha256"
+      ]
+    },
+    {
+      "type": "rememberText",
+      "name": "Remember fixed patient reference output",
+      "selector": "#patient_profile_score",
+      "key": "fixed_patient"
+    },
+    {
+      "type": "tab",
+      "name": "Explorer before independence check",
+      "selector": "#main_tab a[data-value=\"explorer\"]"
+    },
+    {
+      "type": "select",
+      "name": "Change explorer patient only",
+      "selector": "#explorer_patient",
+      "value": "JK124",
+      "assertSelector": "#selection_summary .selection-count",
+      "assertText": "96",
+      "assertExact": true
+    },
+    {
+      "type": "select",
+      "name": "Change explorer measurement only",
+      "selector": "#explorer_feature",
+      "value": "FibroScore1"
+    },
+    {
+      "type": "tab",
+      "name": "Patient after independent exploration",
+      "selector": "#main_tab a[data-value=\"patient\"]"
+    },
+    {
+      "type": "assertRemembered",
+      "name": "Explorer filters do not change patient index or reference",
+      "selector": "#patient_profile_score",
+      "key": "fixed_patient"
+    },
+    {
+      "type": "select",
+      "name": "Patient JK124 expression index and support",
+      "selector": "#patient_profile_id",
+      "value": "JK124",
+      "assertions": [
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(1) .kpi-value",
+          "text": "3,3 / 10",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(3) .kpi-value",
+          "text": "96 / 4",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "96 hücre"
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "Klinik risk: hesaplanamıyor."
+        }
+      ],
+      "checkOverflow": true
+    },
+    {
+      "type": "assert",
+      "name": "Patient reference plot loaded",
+      "assertImage": "#patient_profile_reference_plot img"
+    },
+    {
+      "type": "screenshot",
+      "name": "Desktop patient assessment screenshot",
+      "filename": "desktop-patient"
+    }
+  ],
+  "logoSelectors": [
+    ".brand-logo",
+    ".hero-brand-logo"
+  ],
+  "mobileSteps": [
+    {
+      "type": "tab",
+      "name": "Mobile model results",
+      "selector": "#main_tab a[data-value=\"models\"]"
+    },
+    {
+      "type": "screenshot",
+      "name": "Mobile model screenshot",
+      "filename": "mobile-models"
+    },
+    {
+      "type": "tab",
+      "name": "Mobile patient assessment",
+      "selector": "#main_tab a[data-value=\"patient\"]"
+    },
+    {
+      "type": "select",
+      "name": "Patient JK124 expression index and support",
+      "selector": "#patient_profile_id",
+      "value": "JK124",
+      "assertions": [
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(1) .kpi-value",
+          "text": "3,3 / 10",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(3) .kpi-value",
+          "text": "96 / 4",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "96 hücre"
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "Klinik risk: hesaplanamıyor."
+        }
+      ],
+      "checkOverflow": true
+    },
+    {
+      "type": "assert",
+      "name": "Mobile patient plot loaded",
+      "assertImage": "#patient_profile_reference_plot img"
+    },
+    {
+      "type": "screenshot",
+      "name": "Mobile patient screenshot",
+      "filename": "mobile-patient"
+    },
+    {
+      "type": "select",
+      "name": "Patient JK126 expression index and support",
+      "selector": "#patient_profile_id",
+      "value": "JK126",
+      "assertions": [
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(1) .kpi-value",
+          "text": "10,0 / 10",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score .kpi-card:nth-child(3) .kpi-value",
+          "text": "6 / 2",
+          "exact": true
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "6 hücre"
+        },
+        {
+          "selector": "#patient_profile_score",
+          "text": "Klinik risk: hesaplanamıyor."
+        }
+      ],
+      "checkOverflow": true
+    },
+    {
+      "type": "tab",
+      "name": "Mobile external results",
+      "selector": "#main_tab a[data-value=\"external\"]"
+    },
+    {
+      "type": "tab",
+      "name": "Mobile method sources",
+      "selector": "#main_tab a[data-value=\"methods\"]"
+    },
+    {
+      "type": "tab",
+      "name": "Mobile upload",
+      "selector": "#main_tab a[data-value=\"upload\"]"
+    }
+  ]
+}

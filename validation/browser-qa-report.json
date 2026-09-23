@@ -1,0 +1,547 @@
+{
+  "startedAt": "2026-09-22T06:16:59.105Z",
+  "url": "http://127.0.0.1:3838",
+  "checks": [
+    {
+      "name": "desktop supplied logo loaded",
+      "status": "passed",
+      "selector": ".brand-logo"
+    },
+    {
+      "name": "desktop supplied logo loaded",
+      "status": "passed",
+      "selector": ".hero-brand-logo"
+    },
+    {
+      "name": "desktop overview rendered",
+      "status": "passed"
+    },
+    {
+      "name": "desktop overview has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "desktop explorer rendered",
+      "status": "passed"
+    },
+    {
+      "name": "desktop explorer has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Main cohort selection",
+      "status": "passed",
+      "selector": "#explorer_dataset"
+    },
+    {
+      "name": "Patient filter JK124",
+      "status": "passed",
+      "selector": "#explorer_patient"
+    },
+    {
+      "name": "Filtered CSV has 96 JK124 cells",
+      "status": "passed",
+      "selector": "#download_cells"
+    },
+    {
+      "name": "Feature plot PNG download",
+      "status": "passed",
+      "selector": "#download_feature_plot"
+    },
+    {
+      "name": "FibroScore1 selection",
+      "status": "passed",
+      "selector": "#explorer_feature"
+    },
+    {
+      "name": "Reset filters",
+      "status": "passed",
+      "selector": "#reset_filters"
+    },
+    {
+      "name": "myCAF_like cell type filter",
+      "status": "passed",
+      "selector": "#explorer_cell_type"
+    },
+    {
+      "name": "USP9X slider filter",
+      "status": "passed",
+      "selector": "#explorer_range"
+    },
+    {
+      "name": "Reset after slider",
+      "status": "passed",
+      "selector": "#reset_filters"
+    },
+    {
+      "name": "External cohort selection",
+      "status": "passed",
+      "selector": "#explorer_dataset"
+    },
+    {
+      "name": "Healthy reference selection",
+      "status": "passed",
+      "selector": "#explorer_dataset"
+    },
+    {
+      "name": "Return to development cohort",
+      "status": "passed",
+      "selector": "#explorer_dataset"
+    },
+    {
+      "name": "Explorer UMAP screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "desktop Model tab has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Model tab",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"models\"]"
+    },
+    {
+      "name": "Main expanded grid model",
+      "status": "passed",
+      "selector": "#model_stage"
+    },
+    {
+      "name": "Permutation table header-body alignment",
+      "status": "passed",
+      "selector": "#permutation_table",
+      "headerX": 65,
+      "bodyX": 65
+    },
+    {
+      "name": "Model screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "Calibrated secondary model",
+      "status": "passed",
+      "selector": "#model_stage"
+    },
+    {
+      "name": "desktop External transfer tab has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "External transfer tab",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"external\"]"
+    },
+    {
+      "name": "desktop Methods tab has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Methods tab",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"methods\"]"
+    },
+    {
+      "name": "desktop Upload tab has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Upload tab",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"upload\"]"
+    },
+    {
+      "name": "desktop Patient assessment tab has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Patient assessment tab",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"patient\"]"
+    },
+    {
+      "name": "desktop Patient JK124 expression index and support has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Patient JK124 expression index and support",
+      "status": "passed",
+      "selector": "#patient_profile_id"
+    },
+    {
+      "name": "JK124 research profile CSV source fields",
+      "status": "passed",
+      "selector": "#patient_profile_download"
+    },
+    {
+      "name": "desktop Patient JK126 expression index and support has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Patient JK126 expression index and support",
+      "status": "passed",
+      "selector": "#patient_profile_id"
+    },
+    {
+      "name": "JK126 research profile CSV source fields",
+      "status": "passed",
+      "selector": "#patient_profile_download"
+    },
+    {
+      "name": "Remember fixed patient reference output",
+      "status": "passed",
+      "selector": "#patient_profile_score"
+    },
+    {
+      "name": "desktop Explorer before independence check has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Explorer before independence check",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"explorer\"]"
+    },
+    {
+      "name": "Change explorer patient only",
+      "status": "passed",
+      "selector": "#explorer_patient"
+    },
+    {
+      "name": "Change explorer measurement only",
+      "status": "passed",
+      "selector": "#explorer_feature"
+    },
+    {
+      "name": "desktop Patient after independent exploration has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Patient after independent exploration",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"patient\"]"
+    },
+    {
+      "name": "Explorer filters do not change patient index or reference",
+      "status": "passed",
+      "selector": "#patient_profile_score"
+    },
+    {
+      "name": "desktop Patient JK124 expression index and support has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 1440,
+      "document": 1440
+    },
+    {
+      "name": "Patient JK124 expression index and support",
+      "status": "passed",
+      "selector": "#patient_profile_id"
+    },
+    {
+      "name": "Patient reference plot loaded",
+      "status": "passed"
+    },
+    {
+      "name": "Desktop patient assessment screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "mobile supplied logo loaded",
+      "status": "passed",
+      "selector": ".brand-logo"
+    },
+    {
+      "name": "mobile supplied logo loaded",
+      "status": "passed",
+      "selector": ".hero-brand-logo"
+    },
+    {
+      "name": "mobile overview rendered",
+      "status": "passed"
+    },
+    {
+      "name": "mobile overview has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "mobile explorer rendered",
+      "status": "passed"
+    },
+    {
+      "name": "mobile explorer has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "mobile Mobile model results has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "Mobile model results",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"models\"]"
+    },
+    {
+      "name": "Mobile model screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "mobile Mobile patient assessment has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "Mobile patient assessment",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"patient\"]"
+    },
+    {
+      "name": "mobile Patient JK124 expression index and support has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "Patient JK124 expression index and support",
+      "status": "passed",
+      "selector": "#patient_profile_id"
+    },
+    {
+      "name": "Mobile patient plot loaded",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile patient screenshot",
+      "status": "passed"
+    },
+    {
+      "name": "mobile Patient JK126 expression index and support has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "Patient JK126 expression index and support",
+      "status": "passed",
+      "selector": "#patient_profile_id"
+    },
+    {
+      "name": "mobile Mobile external results has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "Mobile external results",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"external\"]"
+    },
+    {
+      "name": "mobile Mobile method sources has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "Mobile method sources",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"methods\"]"
+    },
+    {
+      "name": "mobile Mobile upload has no horizontal document overflow",
+      "status": "passed",
+      "viewport": 390,
+      "document": 390
+    },
+    {
+      "name": "Mobile upload",
+      "status": "passed",
+      "selector": "#main_tab a[data-value=\"upload\"]"
+    }
+  ],
+  "browserErrors": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "./validation/desktop-overview.png",
+    "./validation/desktop-explorer.png",
+    "./validation/desktop-models.png",
+    "./validation/desktop-patient.png",
+    "./validation/mobile-overview.png",
+    "./validation/mobile-explorer.png",
+    "./validation/mobile-models.png",
+    "./validation/mobile-patient.png"
+  ],
+  "downloads": [
+    {
+      "path": "./validation/StopLaris_secili_hucreler_2026-09-22.csv",
+      "bytes": 40149,
+      "header": [
+        "dataset",
+        "cell_id",
+        "patient_id",
+        "sample_id",
+        "cell_type",
+        "USP9X",
+        "USP9X_raw_counts",
+        "USP9X_positive",
+        "library_counts",
+        "predicted_label",
+        "predicted_calibrated",
+        "prediction_type",
+        "annotation_type",
+        "umap_1",
+        "umap_2",
+        "FibroScore1",
+        "n_features",
+        "percent_mt",
+        "reg_stg",
+        "p_raw_iCAF_like_uncertain",
+        "p_raw_myCAF_like",
+        "p_raw_pericyte_vCAF_like",
+        "p_cal_iCAF_like_uncertain",
+        "p_cal_myCAF_like",
+        "p_cal_pericyte_vCAF_like",
+        "max_probability",
+        "ref_high_confidence",
+        "stromal_perivascular_z",
+        "stromal_fibroblast_ecm_z",
+        "contractile_myCAF_z",
+        "inflammatory_iCAF_z",
+        "pericyte_vCAF_like_ref_z",
+        "myCAF_like_ref_z",
+        "iCAF_like_uncertain_ref_z"
+      ],
+      "rows": 96,
+      "checkedFields": {},
+      "checkedNumericFields": {}
+    },
+    {
+      "path": "./validation/StopLaris_olcum_dagilimi_2026-09-22.png",
+      "bytes": 58366,
+      "format": "png"
+    },
+    {
+      "path": "./validation/StopLaris_JK124_molekuler_profil.csv",
+      "bytes": 1163,
+      "header": [
+        "patient_id",
+        "n_cells",
+        "n_samples",
+        "mean_USP9X",
+        "median_USP9X",
+        "USP9X_positive_n",
+        "USP9X_positive_fraction",
+        "sample_ids",
+        "source_contexts",
+        "reference_rank",
+        "score_0_10",
+        "dataset",
+        "method_version",
+        "data_version",
+        "reference_n_patients",
+        "reference_n_cells",
+        "normalization",
+        "normalization_denominator",
+        "formula",
+        "reference_includes_selected_patient",
+        "clinical_risk_available",
+        "clinical_risk_probability",
+        "clinical_risk_reason",
+        "interpretation",
+        "reference_cells_sha256"
+      ],
+      "rows": 1,
+      "checkedFields": {
+        "patient_id": "JK124",
+        "dataset": "GSE173278",
+        "method_version": "USP9X_cohort_midrank_0_10_v1",
+        "data_version": "V5_STAGE2_2026-09-20",
+        "clinical_risk_available": "FALSE",
+        "clinical_risk_probability": "",
+        "reference_includes_selected_patient": "TRUE"
+      },
+      "checkedNumericFields": {
+        "score_0_10": 3.3333333333333335,
+        "n_cells": 96,
+        "reference_n_patients": 10,
+        "reference_n_cells": 842
+      }
+    },
+    {
+      "path": "./validation/StopLaris_JK126_molekuler_profil.csv",
+      "bytes": 1114,
+      "header": [
+        "patient_id",
+        "n_cells",
+        "n_samples",
+        "mean_USP9X",
+        "median_USP9X",
+        "USP9X_positive_n",
+        "USP9X_positive_fraction",
+        "sample_ids",
+        "source_contexts",
+        "reference_rank",
+        "score_0_10",
+        "dataset",
+        "method_version",
+        "data_version",
+        "reference_n_patients",
+        "reference_n_cells",
+        "normalization",
+        "normalization_denominator",
+        "formula",
+        "reference_includes_selected_patient",
+        "clinical_risk_available",
+        "clinical_risk_probability",
+        "clinical_risk_reason",
+        "interpretation",
+        "reference_cells_sha256"
+      ],
+      "rows": 1,
+      "checkedFields": {
+        "patient_id": "JK126",
+        "dataset": "GSE173278",
+        "method_version": "USP9X_cohort_midrank_0_10_v1",
+        "data_version": "V5_STAGE2_2026-09-20",
+        "clinical_risk_available": "FALSE",
+        "clinical_risk_probability": "",
+        "reference_includes_selected_patient": "TRUE"
+      },
+      "checkedNumericFields": {
+        "score_0_10": 10,
+        "n_cells": 6,
+        "reference_n_patients": 10,
+        "reference_n_cells": 842
+      }
+    }
+  ],
+  "status": "passed",
+  "finishedAt": "2026-09-22T06:18:37.954Z"
+}

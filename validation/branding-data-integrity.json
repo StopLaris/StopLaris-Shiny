@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-22",
+  "source_data_files_unchanged": 18,
+  "original_logo_preserved": true,
+  "logo_sha256": "55d910f7144ae13dee922a74bb2dca58bf65543286595141464a0cf01b258757",
+  "checks": [
+    {
+      "file": "data/cells.csv",
+      "sha256": "8c7ec16d830ea3889a3713250c2282551a5ba5d8e8bc1f74e1b9e61c0bbb3c01",
+      "unchanged": true
+    },
+    {
+      "file": "data/confusion.csv",
+      "sha256": "c8d3a1846f257effd71cb254fd7a40a05bea3dcbc13cd04cda18f0acfaf1525b",
+      "unchanged": true
+    },
+    {
+      "file": "data/external_concordance.csv",
+      "sha256": "3fe97494f1ed28174fb7784e86f0b38340509237a1b64911a7eba8949a272988",
+      "unchanged": true
+    },
+    {
+      "file": "data/external_summary.json",
+      "sha256": "06b1a8d77af3b9e054b894e28b6acd52d144e1e96fe926478ed867be3ded62cc",
+      "unchanged": true
+    },
+    {
+      "file": "data/healthy_summary.csv",
+      "sha256": "454a8f884f9bfea5a3b7b5e50be9d6e6935875e677d06c36cfa058255bfe1373",
+      "unchanged": true
+    },
+    {
+      "file": "data/marker_summary.csv",
+      "sha256": "05d349ae335522403241657e66433dea6b30ccea15cda997907525e38c12733d",
+      "unchanged": true
+    },
+    {
+      "file": "data/metadata.json",
+      "sha256": "9b20dfb5723888c9329be5eae3dcf408f93169f4f0bd87e1f998cdafae04155e",
+      "unchanged": true
+    },
+    {
+      "file": "data/metrics.csv",
+      "sha256": "9b13adb5986f3a525f765ae2586b1b4da379898003cd480fb65ab26f5db5f950",
+      "unchanged": true
+    },
+    {
+      "file": "data/patient_bootstrap_ci.csv",
+      "sha256": "f452acb7487082e6647666a4e87fdaf046c8a2f66d4717bb816c9ef4d6a971ec",
+      "unchanged": true
+    },
+    {
+      "file": "data/per_patient_metrics.csv",
+      "sha256": "3ac0f004f65bad594efc0b9e63b9ea582d8a4a4318161e9b5e52a62912fc93ed",
+      "unchanged": true
+    },
+    {
+      "file": "data/permutation_scores.csv",
+      "sha256": "6b61f90d3c9149a1ea2273efd29a015c5cddb87b9920dd062ea77dc5c9d03e0b",
+      "unchanged": true
+    },
+    {
+      "file": "data/permutation_status.json",
+      "sha256": "2f9786f6e5e6951273ee7510a7613f4a9a0f9ce15fe12d173233ce2a09dc3671",
+      "unchanged": true
+    },
+    {
+      "file": "data/provenance.json",
+      "sha256": "902042733c669075b6d1daa26ece39ca0b207bf428d7437b35cfc02cf827b77f",
+      "unchanged": true
+    },
+    {
+      "file": "data/reliability_bins.csv",
+      "sha256": "a922a2c16792d9502cdac52a663e28122f985e2ce98574732448606012a59050",
+      "unchanged": true
+    },
+    {
+      "file": "data/scientific_notes.md",
+      "sha256": "0bf103712bccad5b87fdc06586be50758bdac4417c6f112cdfa8d7a87143d8d7",
+      "unchanged": true
+    },
+    {
+      "file": "data/selective_thresholds.csv",
+      "sha256": "13a11ea5c207b6d5880ed9dcc521958674114c71c6a9c0ba58765abc19307633",
+      "unchanged": true
+    },
+    {
+      "file": "data/sources.csv",
+      "sha256": "322e86581ec9ecda3df1e7007f3014d4fbef565304c00411e976432faabd3eac",
+      "unchanged": true
+    },
+    {
+      "file": "data/usp9x_patient_summary.csv",
+      "sha256": "762cf5e7f8b93757660df6b41ad570fba9cabc0a64749105003822d51e60cc31",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "CITATION_cff_schema": "passed",
+  "schema": "official citation-file-format main schema.json, version1.2.0",
+  "workflow_yaml_parse": "passed",
+  "workflow_static_security_and_paths": "passed",
+  "relative_document_links": 19,
+  "R_or_GitHub_Actions_execution": "not run",
+  "files": [
+    "README.md",
+    "CITATION.cff",
+    ".gitignore",
+    ".github/workflows/r-tests.yml",
+    "docs/GITHUB_RELEASE_NOTES.md"
+  ]
+}

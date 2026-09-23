@@ -1,0 +1,144 @@
+{
+  "app_path": ".",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Shiny HTTP UI",
+      "status": "passed",
+      "http_status": 200,
+      "bytes": 29860
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "jquery-3.6.0/jquery.min.js",
+      "bytes": 89037
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "shiny-css-1.8.0/shiny.min.css",
+      "bytes": 6291
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "shiny-javascript-1.8.0/shiny.min.js",
+      "bytes": 338715
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "htmlwidgets-1.6.4/htmlwidgets.js",
+      "bytes": 33190
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "datatables-css-0.0.0/datatables-crosstalk.css",
+      "bytes": 1501
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "datatables-binding-0.31/datatables.js",
+      "bytes": 60791
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "crosstalk-1.2.1/css/crosstalk.min.css",
+      "bytes": 1306
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "crosstalk-1.2.1/js/crosstalk.min.js",
+      "bytes": 18925
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "selectize-0.15.2/css/selectize.bootstrap3.css",
+      "bytes": 13185
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "selectize-0.15.2/js/selectize.min.js",
+      "bytes": 42323
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "selectize-0.15.2/accessibility/js/selectize-plugin-a11y.min.js",
+      "bytes": 2512
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "ionrangeslider-javascript-2.3.1/js/ion.rangeSlider.min.js",
+      "bytes": 41631
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "strftime-0.9.2/strftime-min.js",
+      "bytes": 9686
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "ionrangeslider-css-2.3.1/css/ion.rangeSlider.css",
+      "bytes": 4944
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "font-awesome-6.4.2/css/all.min.css",
+      "bytes": 101458
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "font-awesome-6.4.2/css/v4-shims.min.css",
+      "bytes": 27593
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "bootstrap-3.4.1/css/bootstrap.min.css",
+      "bytes": 120271
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "bootstrap-3.4.1/accessibility/css/bootstrap-accessibility.min.css",
+      "bytes": 1531
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "bootstrap-3.4.1/js/bootstrap.min.js",
+      "bytes": 51159
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "bootstrap-3.4.1/accessibility/js/bootstrap-accessibility.min.js",
+      "bytes": 12787
+    },
+    {
+      "name": "UI asset",
+      "status": "passed",
+      "path": "style.css",
+      "bytes": 16840
+    },
+    {
+      "name": "Supplied logo PNG served",
+      "status": "passed",
+      "path": "stoplaris-logo.png",
+      "bytes": 1527508
+    }
+  ]
+}

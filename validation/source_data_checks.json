@@ -1,0 +1,208 @@
+{
+  "report_type": "independent_source_data_readback_checks",
+  "created_utc": "2026-09-21T14:17:19.983104+00:00",
+  "scope": "Data bundle only; these are not browser, model-training, clinical or biological validation tests.",
+  "status": "PASS",
+  "n_checks": 23,
+  "checks": [
+    {
+      "name": "source_sha256_match",
+      "passed": true,
+      "evidence": {
+        "files_checked": 21,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "output_sha256_match",
+      "passed": true,
+      "evidence": {
+        "files_checked": 17,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "unique_dataset_cell_keys",
+      "passed": true,
+      "evidence": {
+        "rows": 12499,
+        "duplicate_keys": 0
+      }
+    },
+    {
+      "name": "cohort_counts",
+      "passed": true,
+      "evidence": {
+        "GSE173278": 842,
+        "GSE141946": 1404,
+        "GSE97930": 10253
+      }
+    },
+    {
+      "name": "donor_identity_scope",
+      "passed": true,
+      "evidence": {
+        "development_patients": 10,
+        "external_donors": 3,
+        "healthy_patient_values": 0,
+        "external_samples": 4
+      }
+    },
+    {
+      "name": "development_labels_exact_source",
+      "passed": true,
+      "evidence": {
+        "rows": 842,
+        "source": "03_V5_STAGE2/observed/oof_predictions.csv"
+      }
+    },
+    {
+      "name": "main_oof_predictions_preserved",
+      "passed": true,
+      "evidence": {
+        "rows": 842,
+        "prediction_type": [
+          "OOF_leave_one_patient_out"
+        ]
+      }
+    },
+    {
+      "name": "calibrated_oof_predictions_preserved",
+      "passed": true,
+      "evidence": {
+        "rows": 842
+      }
+    },
+    {
+      "name": "development_raw_probabilities",
+      "passed": true,
+      "evidence": {
+        "rows": 842,
+        "max_sum_error": 5.551115123125783e-16
+      }
+    },
+    {
+      "name": "development_calibrated_probabilities",
+      "passed": true,
+      "evidence": {
+        "rows": 842,
+        "max_sum_error": 5.551115123125783e-16
+      }
+    },
+    {
+      "name": "external_raw_probabilities",
+      "passed": true,
+      "evidence": {
+        "rows": 1404,
+        "max_sum_error": 5.551115123125783e-16
+      }
+    },
+    {
+      "name": "expanded_grid_confusion_f1",
+      "passed": true,
+      "evidence": {
+        "cells": 842,
+        "recomputed_macro_f1": 0.9231877906547575,
+        "reported_macro_f1": 0.9231877906547576
+      }
+    },
+    {
+      "name": "calibrated_confusion_f1",
+      "passed": true,
+      "evidence": {
+        "cells": 842,
+        "recomputed_macro_f1": 0.9218050468050468,
+        "reported_macro_f1": 0.9218050468050468
+      }
+    },
+    {
+      "name": "external_transfer_confusion_f1",
+      "passed": true,
+      "evidence": {
+        "cells": 1404,
+        "recomputed_macro_f1": 0.37972798540827163,
+        "reported_macro_f1": 0.3797279854082716
+      }
+    },
+    {
+      "name": "expanded_grid_patient_mean_f1",
+      "passed": true,
+      "evidence": {
+        "patients": 10,
+        "recomputed": 0.8840518603780835,
+        "reported": 0.8840518603780835
+      }
+    },
+    {
+      "name": "calibrated_patient_mean_f1",
+      "passed": true,
+      "evidence": {
+        "patients": 10,
+        "recomputed": 0.8848715428001922,
+        "reported": 0.8848715428001922
+      }
+    },
+    {
+      "name": "healthy_qc_keys_and_USP9X",
+      "passed": true,
+      "evidence": {
+        "postqc_cells": 10253,
+        "USP9X_positive": 809
+      }
+    },
+    {
+      "name": "GSE173278_USP9X_lognorm",
+      "passed": true,
+      "evidence": {
+        "max_abs_error": 2.220446049250313e-16,
+        "normalization": "log1p(raw/library_counts*10000); dataset-specific source denominator"
+      }
+    },
+    {
+      "name": "GSE141946_USP9X_lognorm",
+      "passed": true,
+      "evidence": {
+        "max_abs_error": 4.440892098500626e-16,
+        "normalization": "log1p(raw/library_counts*10000); dataset-specific source denominator"
+      }
+    },
+    {
+      "name": "GSE97930_USP9X_lognorm",
+      "passed": true,
+      "evidence": {
+        "max_abs_error": 4.440892098500626e-16,
+        "normalization": "log1p(raw/library_counts*10000); dataset-specific source denominator"
+      }
+    },
+    {
+      "name": "umap_availability",
+      "passed": true,
+      "evidence": {
+        "development_rows": 842,
+        "external_rows": 0,
+        "healthy_rows": 0,
+        "source_extraction": "Import script extracted original RDS coordinates by 1:1 cell IDs; no UMAP recalculation"
+      }
+    },
+    {
+      "name": "permutations_complete",
+      "passed": true,
+      "evidence": {
+        "distinct_indices": 1000,
+        "exceedances": 0,
+        "observed": 0.8840518603780835,
+        "plus_one_p": 0.000999000999000999
+      }
+    },
+    {
+      "name": "healthy_has_no_invented_predictions",
+      "passed": true,
+      "evidence": {
+        "rows": 10253,
+        "prediction_type": [
+          "unavailable"
+        ]
+      }
+    }
+  ]
+}
