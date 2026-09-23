@@ -1,0 +1,137 @@
+{
+  "classes": [
+    "iCAF_like_uncertain",
+    "myCAF_like",
+    "pericyte_vCAF_like"
+  ],
+  "data_version": "V5_STAGE2_2026-09-20",
+  "datasets": [
+    {
+      "description": "842 seçilmiş CAF/stromal aday hücre; mevcut marker kökenli üç sınıf. Hasta dışarıda bırakmalı V5 tahminleri.",
+      "has_umap": true,
+      "id": "GSE173278",
+      "label": "GSE173278 · geliştirme CAF/stromal",
+      "n_cells": 842,
+      "n_patients": 10,
+      "n_samples": 30,
+      "patient_ids_verified": true,
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173278",
+      "usp9x_denominator": "Kaynak RDS içindeki 24.715 genin tam hücre toplamı (nCount_RNA)."
+    },
+    {
+      "description": "Üç bağımsız donörden dört kaynak örnek; 1.404 stromal aday. Dondurulmuş model aktarımı; bağımsız uzman altın standardı yok.",
+      "has_umap": false,
+      "id": "GSE141946",
+      "label": "GSE141946 · dış stromal aktarım",
+      "n_cells": 1404,
+      "n_patients": 3,
+      "n_samples": 4,
+      "patient_ids_verified": true,
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE141946",
+      "usp9x_denominator": "Tüm dış gen evrenindeki total_counts. Model olasılıkları ise kayıtlı birincil V5 aligned-input normalizasyonundan gelir."
+    },
+    {
+      "description": "Sağlıklı beyin snRNA-seq. Kayıtlı QC koşullarını geçen 10.253 hücre; sınıflar kaynak barkod önekleri. Bu aktarımda doğrulanmış donör eşlemesi yok.",
+      "has_umap": false,
+      "id": "GSE97930",
+      "label": "GSE97930 · sağlıklı beyin / QC sonrası",
+      "n_cells": 10253,
+      "n_patients": null,
+      "n_samples": 13,
+      "patient_ids_verified": false,
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE97930",
+      "usp9x_denominator": "En az üç hücrede saptanan gen filtresinden sonraki nCount_after_min_cells3."
+    }
+  ],
+  "default_dataset": "GSE173278",
+  "limitations": [
+    "Araştırma amaçlı sonuç gezgini; klinik karar veya tedavi önerisi üretmez.",
+    "CAF/KİF terminolojisindeki eski etiketler güncel üç sınıfa sessizce dönüştürülmedi; özgün etiketler korundu.",
+    "iCAF_like_uncertain yalnız 37 hücre ve altı hastaya dayanır.",
+    "FibroScore1 ve dış marker skorları farklı yöntemlerdir; veri kümeleri arasında ortak ölçek gibi karşılaştırılmaz.",
+    "Sağlıklı/tümör veri kümelerinde platform, örnekleme ve normalizasyon paydaları farklıdır; doğrudan vaka-kontrol testi yapılmadı.",
+    "Sıfır USP9X sayımı ölçümde saptanmamayı gösterir; biyolojik yokluk veya tedavi güvenliliği kanıtı değildir.",
+    "UMAP yalnız kaynak RDS'den 842 geliştirme hücresi için çıkarılmıştır; tahmin performansının bağımsız kanıtı değildir."
+  ],
+  "metric_definitions": {
+    "domain_classifier_auc": "Geliştirme ve dış veri kümelerinin ayırt edilebilirliği; CAF alt tipi sınıflandırma başarısı değildir.",
+    "macro_f1": "Dış kohort hücreleri birleştirilerek mevcut hesaplamalı marker referansına makro-F1 uyumu.",
+    "patient_mean_macro_f1": "Her test hastasında gerçek etiketler arasında bulunan sınıfların makro-F1 değeri; 10 hastanın eşit ağırlıklı ortalaması.",
+    "patient_mean_multiclass_brier_sum": "Üç sınıfın karesel olasılık hataları toplamı (0–2 ölçeği), hasta başına ortalamaların ortalaması.",
+    "patient_sd_ddof1": "10 hasta puanının örnek standart sapması; güven aralığı değildir."
+  },
+  "schema_version": "1.0.0",
+  "score_columns": [
+    {
+      "datasets": [
+        "GSE173278"
+      ],
+      "description": "Arşiv Seurat fibroblast modül skoru. CAF alt tipi olasılığı değildir; özgün skor kontrol-gen kümesinin tam kod izi bulunmamıştır.",
+      "label": "FibroScore1",
+      "name": "FibroScore1"
+    },
+    {
+      "datasets": [
+        "GSE141946"
+      ],
+      "description": "Dış verinin kayıtlı gen-panel skoru. Marker referansı oluşturma bileşenidir; bağımsız biyolojik doğrulama veya model olasılığı değildir.",
+      "label": "Perivasküler stromal marker z skoru",
+      "name": "stromal_perivascular_z"
+    },
+    {
+      "datasets": [
+        "GSE141946"
+      ],
+      "description": "Dış verinin kayıtlı gen-panel skoru. Marker referansı oluşturma bileşenidir; bağımsız biyolojik doğrulama veya model olasılığı değildir.",
+      "label": "Fibroblast / ECM marker z skoru",
+      "name": "stromal_fibroblast_ecm_z"
+    },
+    {
+      "datasets": [
+        "GSE141946"
+      ],
+      "description": "Dış verinin kayıtlı gen-panel skoru. Marker referansı oluşturma bileşenidir; bağımsız biyolojik doğrulama veya model olasılığı değildir.",
+      "label": "Kontraktil myCAF marker z skoru",
+      "name": "contractile_myCAF_z"
+    },
+    {
+      "datasets": [
+        "GSE141946"
+      ],
+      "description": "Dış verinin kayıtlı gen-panel skoru. Marker referansı oluşturma bileşenidir; bağımsız biyolojik doğrulama veya model olasılığı değildir.",
+      "label": "İnflamatuvar iCAF marker z skoru",
+      "name": "inflammatory_iCAF_z"
+    },
+    {
+      "datasets": [
+        "GSE141946"
+      ],
+      "description": "Dış verinin kayıtlı gen-panel skoru. Marker referansı oluşturma bileşenidir; bağımsız biyolojik doğrulama veya model olasılığı değildir.",
+      "label": "Perisit / vCAF referans z skoru",
+      "name": "pericyte_vCAF_like_ref_z"
+    },
+    {
+      "datasets": [
+        "GSE141946"
+      ],
+      "description": "Dış verinin kayıtlı gen-panel skoru. Marker referansı oluşturma bileşenidir; bağımsız biyolojik doğrulama veya model olasılığı değildir.",
+      "label": "myCAF referans z skoru",
+      "name": "myCAF_like_ref_z"
+    },
+    {
+      "datasets": [
+        "GSE141946"
+      ],
+      "description": "Dış verinin kayıtlı gen-panel skoru. Marker referansı oluşturma bileşenidir; bağımsız biyolojik doğrulama veya model olasılığı değildir.",
+      "label": "Belirsiz iCAF referans z skoru",
+      "name": "iCAF_like_uncertain_ref_z"
+    }
+  ],
+  "stages": {
+    "external": "external_transfer",
+    "main": "expanded_grid",
+    "secondary": "calibrated"
+  },
+  "title": "StopLaris • R Shiny araştırma gezgini",
+  "usp9x_scale": "log1p(10 000 × USP9X ham sayım / veri kümesine ait kütüphane toplamı)"
+}

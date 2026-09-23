@@ -1,0 +1,155 @@
+{
+  "import_script_sha256": "bbd81374913659b54bb0a33ec71391562d3f369a88fa5b583f615748966afbe5",
+  "outputs_sha256": {
+    "cells.csv": "8c7ec16d830ea3889a3713250c2282551a5ba5d8e8bc1f74e1b9e61c0bbb3c01",
+    "confusion.csv": "c8d3a1846f257effd71cb254fd7a40a05bea3dcbc13cd04cda18f0acfaf1525b",
+    "external_concordance.csv": "3fe97494f1ed28174fb7784e86f0b38340509237a1b64911a7eba8949a272988",
+    "external_summary.json": "06b1a8d77af3b9e054b894e28b6acd52d144e1e96fe926478ed867be3ded62cc",
+    "healthy_summary.csv": "454a8f884f9bfea5a3b7b5e50be9d6e6935875e677d06c36cfa058255bfe1373",
+    "marker_summary.csv": "05d349ae335522403241657e66433dea6b30ccea15cda997907525e38c12733d",
+    "metadata.json": "9b20dfb5723888c9329be5eae3dcf408f93169f4f0bd87e1f998cdafae04155e",
+    "metrics.csv": "9b13adb5986f3a525f765ae2586b1b4da379898003cd480fb65ab26f5db5f950",
+    "patient_bootstrap_ci.csv": "f452acb7487082e6647666a4e87fdaf046c8a2f66d4717bb816c9ef4d6a971ec",
+    "per_patient_metrics.csv": "3ac0f004f65bad594efc0b9e63b9ea582d8a4a4318161e9b5e52a62912fc93ed",
+    "permutation_scores.csv": "6b61f90d3c9149a1ea2273efd29a015c5cddb87b9920dd062ea77dc5c9d03e0b",
+    "permutation_status.json": "2f9786f6e5e6951273ee7510a7613f4a9a0f9ce15fe12d173233ce2a09dc3671",
+    "reliability_bins.csv": "a922a2c16792d9502cdac52a663e28122f985e2ce98574732448606012a59050",
+    "scientific_notes.md": "0bf103712bccad5b87fdc06586be50758bdac4417c6f112cdfa8d7a87143d8d7",
+    "selective_thresholds.csv": "13a11ea5c207b6d5880ed9dcc521958674114c71c6a9c0ba58765abc19307633",
+    "sources.csv": "322e86581ec9ecda3df1e7007f3014d4fbef565304c00411e976432faabd3eac",
+    "usp9x_patient_summary.csv": "762cf5e7f8b93757660df6b41ad570fba9cabc0a64749105003822d51e60cc31"
+  },
+  "schema_version": "1.0.0",
+  "source_package_status": "COMPLETE_COMPUTATIONAL_PRE_FINAL_WITH_SCIENTIFIC_LIMITATIONS",
+  "source_paths_are_relative_to": "source_package",
+  "sources": {
+    "01_V5_Ana_Analiz/00_REPORT/fixed_selective_thresholds_exploratory.csv": {
+      "bytes": 694,
+      "purpose": "Prespecified exploratory confidence thresholds; not clinical operating points",
+      "sha256": "ea81e2c78d6e3cba2664bba6309109b491f1f46e84d304269c5a5953e6fca9b7"
+    },
+    "01_V5_Ana_Analiz/00_REPORT/reliability_bins.csv": {
+      "bytes": 3747,
+      "purpose": "Descriptive pooled-cell reliability bins; source stage labels retained",
+      "sha256": "dffe6111145f37199d0ab5368dddad401de89bc6d87073ce3eded9b18d0c0f9e"
+    },
+    "01_V5_Ana_Analiz/03_V5_STAGE2/PERMUTATION_STATUS.json": {
+      "bytes": 307,
+      "purpose": "Authoritative completed 1000-permutation status",
+      "sha256": "4575884e8b711400e8389a6f5d7bb17ca2a31ad7c5f9b90f373202c0b5485bae"
+    },
+    "01_V5_Ana_Analiz/03_V5_STAGE2/observed/oof_predictions.csv": {
+      "bytes": 184946,
+      "purpose": "V5 held-out-patient predictions and raw/calibrated class probabilities",
+      "sha256": "a58f2dac4101e241aa9a6b5bfa50e145127bf9960f3e143786280225139bfa47"
+    },
+    "01_V5_Ana_Analiz/03_V5_STAGE2/observed/patient_metrics.csv": {
+      "bytes": 3848,
+      "purpose": "Observed per-patient metrics, main and calibrated stages only",
+      "sha256": "ee10c9e870190aebae68abe7646af27028b113390724bdd498bc3e2a9758bb76"
+    },
+    "01_V5_Ana_Analiz/03_V5_STAGE2/observed/summary.json": {
+      "bytes": 4264,
+      "purpose": "Observed V5 model metrics; immutable production-time permutation flag is superseded",
+      "sha256": "7ac03226a77efecf7fac5c9f84b62ed6c4355d5d1572a67cf6df9e8ca5f0bee4"
+    },
+    "01_V5_Ana_Analiz/03_V5_STAGE2/permutation_scores.csv": {
+      "bytes": 114768,
+      "purpose": "Completed restricted permutation null distribution",
+      "sha256": "e809ae2fe459c3f4d0691601044b5ac7b899090e856df81479c00b5d73a49452"
+    },
+    "01_V5_Ana_Analiz/03_V5_STAGE2/source_metadata.csv": {
+      "bytes": 206807,
+      "purpose": "Authoritative V5 cell IDs, patient groups, labels and FibroScore1",
+      "sha256": "3464f6e6709ee230f2fe7ba2ed5d1d2359a51afe371ea4100e361511c05473d4"
+    },
+    "01_V5_Ana_Analiz/04_SOURCE_INPUTS/01_ORIGINAL_SOURCES/val_caf_clean_manual_subtype_v2_reprocessed.rds": {
+      "bytes": 14763564,
+      "purpose": "Original Seurat UMAP coordinates: reductions$umap@cell.embeddings; extracted, not regenerated",
+      "sha256": "fd136b0dc93db5911c9f4bd139a9dd67f0d846de275eeb6fd93e6676675ce75c"
+    },
+    "02_Ek_Kontroller/audit/patient_block_bootstrap_ci.csv": {
+      "bytes": 2169,
+      "purpose": "Descriptive patient bootstrap intervals, not new model training",
+      "sha256": "d0b8d32471ccf5acf64568ce0cee6e251e68a7c14f5b72959cd9dc1c6ce8673c"
+    },
+    "02_Ek_Kontroller/external/prepared_hgnc/external_primary_raw_counts_aligned.npz": {
+      "bytes": 3720379,
+      "purpose": "External raw counts aligned to V5 input genes; USP9X extraction only",
+      "sha256": "071ca4efc2ce83ec0beb9354a145d04d284ef223d9687f7b47e60fc48d5c78e3"
+    },
+    "02_Ek_Kontroller/external/prepared_hgnc/input_cells.txt": {
+      "bytes": 23386,
+      "purpose": "Cell order of aligned external raw counts",
+      "sha256": "3a5f5bf279b14138526a9efa2d004719e574ee6c90cba942144565a5721b51f1"
+    },
+    "02_Ek_Kontroller/external/prepared_hgnc/input_genes.txt": {
+      "bytes": 202961,
+      "purpose": "Gene order of aligned external raw counts",
+      "sha256": "8783fcd2cf86dd22a9eab71ea343911a05755824d0d10c3ebfd1143e4465b43f"
+    },
+    "02_Ek_Kontroller/external/results_hgnc/EXTERNAL_V6_SUMMARY.json": {
+      "bytes": 3271,
+      "purpose": "Authoritative latest external transfer summary",
+      "sha256": "f97acb62accf8404cf1c67111bfd728e9c14b1c248a842dfab26c3805f19fa6a"
+    },
+    "02_Ek_Kontroller/external/results_hgnc/external_predictions.csv": {
+      "bytes": 1665349,
+      "purpose": "Latest HGNC-aligned external predictions; primary normalization only",
+      "sha256": "585dfdec1eed5ecb950d3c92998d9a25718734bc3f4c199c2254a46a3ed7f94c"
+    },
+    "02_Ek_Kontroller/external/results_hgnc/marker_reference_concordance.csv": {
+      "bytes": 1179,
+      "purpose": "External primary and sensitivity marker-reference concordance",
+      "sha256": "ae1baf7fd8c80b49027a3d33632fe02aa8ac45643e43a32e22ebbaea3dfeee63"
+    },
+    "02_Ek_Kontroller/provenance/caf_USP9X_cell_values.csv": {
+      "bytes": 68130,
+      "purpose": "Verified raw/log-normalized USP9X counts for 842 development cells",
+      "sha256": "73377c3631aed8f45b800c8ff62e36fc0216258378370e3340783a3679ea2881"
+    },
+    "02_Ek_Kontroller/provenance/caf_USP9X_patient_by_label.csv": {
+      "bytes": 1504,
+      "purpose": "Per-patient subtype USP9X summary",
+      "sha256": "68691608d6b94b1077edd35a5535b83b0d581f4f2b4bfcefb2816d450d3922e3"
+    },
+    "02_Ek_Kontroller/provenance/caf_marker_expression_by_label.csv": {
+      "bytes": 9179,
+      "purpose": "Marker/label internal consistency only",
+      "sha256": "ffba9e022cf6d7e20829e3d15e5cd79fc16770b0321dea2e03128d47b76d72cb"
+    },
+    "02_Ek_Kontroller/provenance/healthy_USP9X_by_source_cell_class.csv": {
+      "bytes": 746,
+      "purpose": "Healthy post-QC USP9X by source class prefix",
+      "sha256": "ec94778204a4595ec6a62288b21a2852597b46066d31ab2acfa1ae7db3798df2"
+    },
+    "02_Ek_Kontroller/provenance/healthy_cell_qc_and_marker_counts.csv": {
+      "bytes": 967761,
+      "purpose": "Source-class prefixes and USP9X counts, retain documented reported-QC passing cells only",
+      "sha256": "02f67b1cf1a1274922308511610ff13fb2879bf162de21a281611205aa65194a"
+    }
+  },
+  "transformations": [
+    "Development source_metadata/oof_predictions/USP9X joined 1:1 on cell+patient, identical labels asserted; expanded OOF is primary.",
+    "Original Seurat reductions$umap@cell.embeddings extracted with rdata 1.1.0, finite 842x2 matrix and cell-ID bijection asserted.",
+    "External predictions filtered to normalization V5_aligned_input_gene_library to avoid counting 2,808 sensitivity rows as cells.",
+    "External aligned matrix USP9X raw counts matched by unique cell IDs; visualization log1p(count/total_counts*10000), without changing model input or predictions.",
+    "Healthy cells filtered by passed_reported_qc; 10253 cells and 809 USP9X-positive asserted; log1p(count/nCount_after_min_cells3*10000).",
+    "No re-training, relabeling, inferred donor identifiers, synthetic rows, newly estimated embeddings, or artificial biological score mappings.",
+    "Metrics copied from authoritative current summaries; confusion cell counts recomputed deterministically; per-patient metrics retain source definitions."
+  ],
+  "validation": {
+    "development_cells": 842,
+    "development_patients": 10,
+    "external_cells": 1404,
+    "external_donors": 3,
+    "healthy_USP9X_positive": 809,
+    "healthy_postqc_cells": 10253,
+    "permutations": 1000,
+    "probability_sums_checked": true,
+    "source_labels_preserved": true,
+    "total_cells": 12499,
+    "umap_exact_source_cells": 842,
+    "unique_dataset_cell_keys": true
+  }
+}

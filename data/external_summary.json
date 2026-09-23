@@ -1,0 +1,72 @@
+{
+  "C_at_grid_boundary": false,
+  "all_subtype_model_fits_converged": true,
+  "completed_utc": "2026-09-18T08:28:21.831673+00:00",
+  "domain_classifier_auc": 0.9999610884408984,
+  "domain_classifier_balanced_accuracy": 0.996913298279094,
+  "domain_classifier_donor_groups": 13,
+  "domain_classifier_interpretation": "dataset separability/domain shift, not CAF-subtype prediction quality",
+  "external_clinical_validation": false,
+  "external_gold_standard_subtype_labels_available": false,
+  "fraction_features_shift_gt_0_5": 0.551,
+  "fraction_features_shift_gt_1": 0.173,
+  "frozen_model_sha256": "dcb0783f9272da9d6c6a1565acfa48014efe5be982e70f8a6c58a29acb97634f",
+  "limitations": [
+    "Only three external donors; four sample labels must not be treated as independent donors.",
+    "Marker-derived reference is computational and not independent expert-validatedCAFsubtype ground truth.",
+    "Missing gene symbols are zero-filled after the declared complete input-gene alignment rule; see alignment manifest.",
+    "Primary normalization uses the alignedV5inputgeneuniverse; full external-library denominator reported as sensitivity.",
+    "No external outcomes are used to tune subtype model; deployment C selected on development cohort only.",
+    "Historical labels/gene universe remain inherited from original RDS; experimental/clinical validation not inferred."
+  ],
+  "marker_reference_concordance_primary": {
+    "accuracy": 0.5505698005698005,
+    "balanced_accuracy": 0.4045027847732508,
+    "macro_f1": 0.37972798540827163,
+    "n_cells": 1404,
+    "n_donors": 3,
+    "normalization": "V5_aligned_input_gene_library",
+    "subset": "all_primary"
+  },
+  "median_abs_standardized_mean_shift": 0.5446589111120275,
+  "median_aligned_fraction_of_external_library": 0.9431393998325365,
+  "missing_selected_features": [
+    "MIR4435-2HG",
+    "SELM",
+    "SLC25A6",
+    "CD99",
+    "AC013461.1",
+    "SELK",
+    "LINC00998",
+    "AC090498.1",
+    "MMP24-AS1"
+  ],
+  "model_loading_warnings": [],
+  "model_reload_predictions_bit_identical": true,
+  "model_reload_probabilities_bit_identical": true,
+  "n_external_cells": 1404,
+  "n_external_donors": 3,
+  "n_external_source_samples": 4,
+  "n_subtype_optimizer_fits": 81,
+  "n_training_cells": 842,
+  "n_training_patients": 10,
+  "nearest_neighbor_distance_median_ratio": 1.5173268493389296,
+  "normalization_sensitivity_prediction_disagreements": 22,
+  "reused_frozen_development_fit": true,
+  "runtime_seconds": 11.081817388534546,
+  "selected_C": 10.0,
+  "selected_feature_alignment_counts": {
+    "direct": 1974,
+    "hgnc_recovered": 17,
+    "missing_zero_filled": 9
+  },
+  "source_sha256": {
+    "build_hgnc_alignment.py": "70aece70d8a6e84b32c36c74cc7506021c37e7622f1c1cbad0ccd2f5573f49d0",
+    "download_inputs.py": "5052ac7bdb9f4c97ecc699f7ffe7828851e1ad952884be721c53eee3dd7e6ab7",
+    "extract_external.py": "b9992eff8411f93a4c02bb84df667545f33d1a22ac1f82732c27146175f62817",
+    "run_external_v6.py": "e6bcfc815534467a7fba585d240e3c54a6d4a5987d5d7cbb906a7981241437de",
+    "stage2_core.py": "17b2d592499d37550812af7d09bda28a607446c3e9cda9ac57d8ce3839a9f63d",
+    "v5_core.py": "08829b8b5134e94bf1326131e825f131a4ca0f1ec9c747a968abe7437bdb3dbb"
+  },
+  "status": "completed_with_scientific_limitations"
+}

@@ -1,0 +1,11 @@
+{
+  "completed": 1000,
+  "environment_continuation_disclosed": true,
+  "exceedances_ge_observed": 0,
+  "n_permutations": 1000,
+  "observed_score": 0.8840518603780836,
+  "p_value_plus_one": 0.000999000999000999,
+  "status": "COMPLETE",
+  "target": 1000,
+  "updated_utc": "2026-09-20T00:30:19.173539+00:00"
+}
