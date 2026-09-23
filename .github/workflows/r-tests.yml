@@ -31,7 +31,9 @@ jobs:
         shell: Rscript {0}
         run: |
           required <- c("shiny", "jsonlite", "ggplot2", "DT", "testthat")
-          install.packages(required)
+          package_repo <- Sys.getenv("RSPM", unset = "")
+          if (!nzchar(package_repo)) package_repo <- "https://cloud.r-project.org"
+          install.packages(required, repos = c(CRAN = package_repo))
           missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
           if (length(missing)) stop("Missing packages: ", paste(missing, collapse = ", "))
           sessionInfo()
