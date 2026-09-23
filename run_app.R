@@ -1,0 +1,15 @@
+# Run from any working directory: Rscript /path/to/StopLaris_Shiny/run_app.R
+args <- commandArgs(trailingOnly = FALSE)
+file_arg <- grep("^--file=", args, value = TRUE)
+app_dir <- if (length(file_arg)) dirname(normalizePath(sub("^--file=", "", file_arg[1]))) else getwd()
+setwd(app_dir)
+fallback <- file.path(path.expand("~"), "R", "StopLaris-library")
+if (dir.exists(fallback)) .libPaths(unique(c(fallback, .libPaths())))
+required <- c("shiny", "jsonlite", "ggplot2", "DT")
+missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
+if (length(missing)) stop(paste("Önce Rscript install.R çalıştırın. Eksik paketler:", paste(missing, collapse = ", ")))
+port <- suppressWarnings(as.integer(Sys.getenv("STOPLARIS_PORT", "3838")))
+if (is.na(port) || port < 1024L || port > 65535L) stop("STOPLARIS_PORT 1024–65535 arasında olmalıdır.")
+host <- Sys.getenv("STOPLARIS_HOST", "127.0.0.1")
+launch <- identical(Sys.getenv("STOPLARIS_OPEN_BROWSER", "true"), "true")
+shiny::runApp(app_dir, host = host, port = port, launch.browser = launch)

@@ -1,0 +1,61 @@
+# Local R / RStudio state; keep the project's versioned .Rprofile.
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.RDataTmp
+Rplots.pdf
+
+# Local environment and service credentials.
+.Renviron
+.Renviron.*
+.env
+.env.*
+!.env.example
+.httr-oauth
+.rsconnect/
+rsconnect/
+credentials*.json
+client_secret*.json
+token*.json
+*.pem
+*.key
+secrets/
+private/
+
+# Local inputs and generated working directories; packaged data/ is tracked.
+uploads/
+local-data/
+runtime/
+.cache/
+tmp/
+temp/
+validation/http-qa/
+
+# Python / Node tooling.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+
+# Editor and operating-system files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Distribution archives belong in release assets, not source history.
+*.zip
+*.tar.gz
+*.tgz
+
+# Regenerated browser/HTTP QA logs and download examples.
+validation/startup_server.log
+validation/shiny-http-server.log
+validation/StopLaris_*_molekuler_profil.csv
+validation/StopLaris_secili_hucreler_*.csv
+validation/StopLaris_olcum_dagilimi_*.png

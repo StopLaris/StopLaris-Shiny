@@ -1,0 +1,19 @@
+cff-version: "1.2.0"
+message: "Bu yazılımı kullanırsanız lütfen bu kayıttaki ekip, başlık ve sürüm bilgileriyle atıf yapın."
+type: software
+title: "StopLaris: R Shiny tek hücre araştırma platformu"
+authors:
+  - name: "StopLaris Proje Ekibi"
+version: "1.2.0"
+repository-code: "https://github.com/StopLaris/StopLaris-Shiny"
+abstract: >-
+  Hazırlanmış tek hücre araştırma verilerini, USP9X ekspresyonunu ve mevcut
+  model çıktılarını inceleyen yerel R Shiny uygulaması. Hasta düzeyindeki
+  0–10 indeks, sabit kohort içindeki göreli ifade sırasını gösterir;
+  klinik risk veya hastalık olasılığı değildir.
+keywords:
+  - "R Shiny"
+  - "single-cell analysis"
+  - "USP9X"
+  - "research software"
+  - "StopLaris"
